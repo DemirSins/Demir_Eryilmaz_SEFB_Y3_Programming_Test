@@ -6,10 +6,10 @@ public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             studentAdder adder = new studentAdder();
-            controller.addStudent(new AssessmentResults("John Smith", 02624129, false, 60.4, 72.8, 0.0 ));
-            controller.addStudent(new AssessmentResults("Ken Miles", 04937529, false, 68.2, 77.4, 0.0));
-            controller.addStudent(new AssessmentResults("Alan Jones", 02457255, true, 58.2, 66.7, 81.2));
-            controller.addStudent(new AssessmentResults("Japhet Tanganga", 03628926, true, 55.6, 88.0, 71.2);
+            adder.addStudent(new AssessmentResults("John Smith", 02624129, false, 60.4, 72.8, 0.0 ));
+            adder.addStudent(new AssessmentResults("Ken Miles", 04937529, false, 68.2, 77.4, 0.0));
+            adder.addStudent(new AssessmentResults("Alan Jones", 02457255, true, 58.2, 66.7, 81.2));
+            adder.addStudent(new AssessmentResults("Japhet Tanganga", 03628926, true, 55.6, 88.0, 71.2);
 
 
             JFrame frame = new JFrame("Student Results");

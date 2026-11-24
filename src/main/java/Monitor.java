@@ -9,13 +9,11 @@ public abstract class Monitor {
         panel.setBorder(BorderFactory.createLineBorder(Color.GRAY));
         panel.add(label);
     }
-    protected abstract String getScore();
-    protected abstract control();
+    ;
 
-    public void update() {                     // same steps for every monitor
-        control();
+    public void log() {
         label.setText("<html>" + getReadingText().replace("\n", "<br>") + "</html>");
-        panel.setBackground(isInRange() ? Color.WHITE : Color.RED);
+        panel.setBackground(usesAi() ? Color.WHITE : Color.RED);
 
 
 

@@ -20,7 +20,9 @@ public class ResultReport{
         this.projectMark = projectMark;
         this.vivaMark = vivaMark;
 
-        public void addResult(Result r) { results.add(r); }
+        public static void addResult(Result r) {
+            results.add(r);
+        }
         public ArrayList<Result> getResult() { return results; }
 
         public void printLog(); {
